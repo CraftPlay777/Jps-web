@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jps – Privacidad</title><meta name="description" content="Mapas de OpenStreetMap sin anuncios, sin cuentas y sin API keys"><link rel="icon" href="assets/icon.png">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--text:#1d2733;--muted:#5b6876;--brand:#1a73e8;--line:#e1e6ec}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--card:#171d24;--text:#e6ebf0;--muted:#9aa7b4;--brand:#6aa8ff;--line:#26303a}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans SC",sans-serif;background:var(--bg);color:var(--text)}
+a{color:var(--brand)}header{background:var(--card);border-bottom:1px solid var(--line)}
+.bar{max-width:820px;margin:auto;padding:12px 16px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.2rem;color:var(--text);text-decoration:none}
+.brand img{width:36px;height:36px;border-radius:8px}
+nav a{margin-right:14px;text-decoration:none}nav a.on{font-weight:700;text-decoration:underline}
+.langs{font-size:.9rem}.langs a{margin-left:10px;text-decoration:none}.langs a.on{font-weight:700}
+main{max-width:820px;margin:auto;padding:24px 16px 48px}
+.hero{text-align:center;padding:24px 0}.hero img{width:112px;height:112px;border-radius:24px;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+.hero h1{margin:16px 0 4px;font-size:2.2rem}.hero p{color:var(--muted);margin:4px 0}
+.btn{display:inline-block;margin:16px 0 6px;padding:13px 28px;border-radius:999px;background:var(--brand);color:#fff;font-weight:700;text-decoration:none}
+.small{font-size:.88rem;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:18px 0}
+.card h2,.card h3{margin-top:0}ul{padding-left:22px}li{margin:4px 0}
+.doc h2{margin-top:0}.doc h3{margin-top:26px}.doc{overflow-wrap:anywhere}
+footer{max-width:820px;margin:auto;padding:0 16px 40px;color:var(--muted);font-size:.9rem;text-align:center}
+</style></head><body>
+<header><div class="bar"><a class="brand" href="./"><img src="assets/icon.png" alt="">Jps</a><nav><a class="" href="./">Inicio</a><a class="on" href="privacy.html">Privacidad</a><a class="" href="about.html">Créditos</a></nav><div class="langs"><a class="on" href="privacy.html" hreflang="es">Español</a><a class="" href="en/privacy.html" hreflang="en">English</a><a class="" href="zh/privacy.html" hreflang="zh">中文</a><a class="" href="fr/privacy.html" hreflang="fr">Français</a></div></div></header>
+<main><article class="card doc"><h2>Política de privacidad de Jps</h2>
+<p><i>Última actualización: 1 de noviembre de 2026</i></p>
+<p>Jps es una aplicación de mapas de código abierto creada por CraftPlay777. Esta política explica qué datos usa la app y para qué.</p>
+
+<h3>Resumen</h3>
+<p>Jps no tiene cuentas, no muestra anuncios, no usa analítica ni rastreadores y no envía tus datos a ningún servidor del desarrollador (no existe ninguno).</p>
+
+<h3>Ubicación</h3>
+<p>El permiso de ubicación es opcional. Se usa solo en tu dispositivo para mostrar tu posición en el mapa y calcular la distancia a un lugar. Jps solo la envía a un servidor cuando pides una ruta con Cómo llegar (ver Servicios de terceros). Puedes retirar el permiso en los ajustes de Android cuando quieras.</p>
+
+<h3>Servicios de terceros</h3>
+<p>Para funcionar, la app se conecta a estos servicios, que reciben tu dirección IP y los datos indicados:</p>
+<ul>
+<li><b>OpenStreetMap</b> (tile.openstreetmap.org): es el servicio de mapa predeterminado; descarga las imágenes del mapa, por lo que conoce la zona que estás viendo.</li>
+<li><b>Otros servicios de mapa</b>, solo si los eliges en Ajustes: OpenStreetMap Francia, Humanitario y CyclOSM (tile.openstreetmap.fr y tile-cyclosm.openstreetmap.fr, operados por OpenStreetMap Francia) u OpenTopoMap (opentopomap.org). El servicio que elijas recibe la zona que estás viendo.</li>
+<li><b>Globo 3D</b> (solo si abres esa pantalla y aceptas): descarga imágenes del mapa de tile.openstreetmap.org y datos de elevación de Terrain Tiles, alojados en Amazon Web Services (s3.amazonaws.com). Ambos reciben tu dirección IP. La app añade su nombre y versión al identificador del navegador interno que dibuja el globo, como piden las normas de OpenStreetMap.</li>
+<li><b>Fronteras, estados y banderas</b> (solo si activas esas opciones y aceptas): descarga las fronteras de los países desde raw.githubusercontent.com (Natural Earth), los límites de estados y provincias desde github.com (geoBoundaries) y las banderas desde flagcdn.com. Estos servicios reciben tu dirección IP y el código del país cuyos datos se piden. Los archivos se guardan en tu dispositivo.</li>
+<li><b>Fotos e información</b> (solo si dejas activada esa opción en Ajustes y aceptas): consulta Wikipedia (es.wikipedia.org y otros idiomas de Wikipedia cuando el lugar solo existe allí) para el texto y Wikimedia Commons (upload.wikimedia.org) para las fotos. Ambos son operados por la Fundación Wikimedia, ven tu dirección IP y reciben el nombre o el artículo del lugar que buscas. Las fotos se guardan solo en la memoria del móvil mientras la app está abierta.</li>
+<li><b>Cómo llegar</b> (solo cuando pides una ruta y aceptas): envía las coordenadas de tu ubicación y del destino a routing.openstreetmap.de (servicio OSRM de FOSSGIS, en Alemania), que guarda las peticiones en sus registros y ve tu dirección IP. Es la única vez que Jps envía tu ubicación a un servidor.</li>
+<li><b>Nominatim</b> (nominatim.openstreetmap.org): recibe el texto que buscas, las coordenadas de un punto que marcas con pulsación larga o el identificador del lugar que eliges, para devolver resultados, direcciones o el contorno de una zona.</li>
+</ul>
+<p>Cada servicio tiene su propia política de privacidad y Jps no controla cómo la aplican. La de la Fundación OpenStreetMap está en <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.</p>
+<p>Jps no hace ninguna conexión hasta que aceptas esta política la primera vez que abres la app.</p>
+
+<h3>Datos guardados en tu dispositivo</h3>
+<p>Se guardan solo en tu dispositivo: tus favoritos, tus últimas 8 búsquedas, tus ajustes, la última posición del mapa que viste y la caché de imágenes del mapa y del globo 3D, y los archivos de fronteras, estados y banderas descargados. Puedes borrar el historial y los favoritos en Ajustes, o borrarlo todo desinstalando la app o limpiando sus datos desde Android.</p>
+
+<h3>Compartir</h3>
+<p>Jps solo comparte un lugar cuando tú lo pides, mediante el menú de compartir de Android. Lo que se comparte es el nombre del lugar y un enlace a OpenStreetMap.</p>
+
+<h3>Menores</h3>
+<p>Jps no recopila datos personales de nadie, tampoco de menores.</p>
+
+<h3>Cambios en esta política</h3>
+<p>Si esta política cambia, se publicará en <a href="https://github.com/CraftPlay777/Jps/blob/main/PRIVACY.md">github.com/CraftPlay777/Jps</a> y se actualizará la fecha de arriba.</p>
+
+<h3>Contacto</h3>
+<p>Para dudas o problemas, abre un tema en <a href="https://github.com/CraftPlay777/Jps/issues">github.com/CraftPlay777/Jps/issues</a>.</p></article></main><footer><a href="https://github.com/CraftPlay777/Jps">Código fuente</a> · <a href="https://github.com/CraftPlay777/Jps/blob/main/LICENSE">Licencia MIT</a> · Hecha por CraftPlay777</footer></body></html>
